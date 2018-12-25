@@ -51,11 +51,11 @@ double getAverageHotelPrice(Destination dest) {
 	double average = 0.0;
 	int i;
 
-	for (i = 1; i < dest.nHotels; i++) {
-		average += *(dest.hotelPrices + i) / dest.nHotels;
+	for (i = 0; i < dest.nHotels; i++) {
+		average += dest.hotelPrices[i];
 	}
 
-	return average;
+	return average / dest.nHotels;
 }
 
 // Modifica coordenades segons la direcció
