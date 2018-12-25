@@ -7,17 +7,18 @@
 void printWelcomeLine();
 void printMenu();
 void printOptionError();
-void printFileError(char * file);
-void printSortMenu();
-void printDestination(Destination d, int pos, int option);
-void printDestinationList(List * l);
-void printPlanMenu();
-void printAltitudeMap(char ** map, int n);
-void printAverage(double average);
-void printTop3(double * prices);
 int askUserForOption();
 int isCorrect(int option);
 int isExit(int option);
+char * readUserString();
 char * askUserForPath();
+void printFileError(char * file);
+void printSortMenu();
+void printDestination(Destination d, int pos, int option);
+void printPlanMenu();
+void printAltitudeMap(char ** map, int n);
+void printDestinationList(List * l);
+void printAverage(double average);
+void printTop3(double * prices);
 
 #endif
