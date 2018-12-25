@@ -98,11 +98,15 @@ void readNewFile(List * l) {
 	FILE *f = fopen(input, "r");
 
 	if (f != NULL) {
+		destroy(l);
 		*l = create();
 		readWholeFile(f, l);
+		fclose(f);
 	} else {
 		printFileError(input);
 	}
+
+	free(input);
 
 }
 
