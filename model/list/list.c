@@ -154,7 +154,7 @@ int isStart(List l, int mode) {
 }
 
 int isEmpty(List l) {
-	return *(l.first -> next) == l.last;
+	return l.n == 0;
 }
 
 void destroy(List * l) {
