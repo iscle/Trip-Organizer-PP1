@@ -27,12 +27,18 @@ typedef struct {
 	Coordinates location;
 } Destination;
 
-Destination readFromFile(FILE * file);
+double haversine(double ang);
 double getDistanceFromBcn(Destination dest);
 double getDistanceBetween(Destination this, Destination that);
 double getAverageHotelPrice(Destination dest);
+void advanceInDirection(int *i, int *j, int direction);
+double checkAltitudeInDirection(double ** travelAltitude, int i, int j, int direction, int n);
+double travelThroughAltitude(double ** travelAltitude, int i, int j, int n);
 double getTimeFromBcn(Destination dest);
-void freeAll(Destination dest);
+void mapAltitude(double ** travelAltitude, char ** map, int i, int j, int n);
 char ** mapAltitudeTravel(Destination dest);
+void freeAll(Destination dest);
+char * readString(FILE * file);
+Destination readFromFile(FILE * file);
 
 #endif
