@@ -1,5 +1,6 @@
 #include <math.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include <memory.h>
 #include "destination.h"
 #include "../../logic/utils/utils.h"
@@ -197,7 +198,7 @@ char * readString(FILE * file) {
 	} while(tmp != '\n');
 
 	ret[i] = '\0';
-	resize(&ret, i);
+	resize(&ret, i + 1);
 
 
 	return ret;

@@ -56,7 +56,7 @@ char * readUserString() {
 	} while (tmp != '\n');
 
 	ret[i] = '\0';
-	resize(&ret, i);
+	resize(&ret, i + 1);
 
 	return ret;
 }
