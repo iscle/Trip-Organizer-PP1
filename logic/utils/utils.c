@@ -4,5 +4,5 @@
 
 
 void resize(char ** pointer, int size) {
-	*pointer = realloc(*pointer, sizeof(char) * size);
+	*pointer = (char *) realloc(*pointer, sizeof(char) * size);
 }
