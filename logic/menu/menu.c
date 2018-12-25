@@ -55,7 +55,8 @@ char * readUserString() {
 		scanf("%c", &tmp);
 	} while (tmp != '\n');
 
-	resize(&ret, i + 1);
+	ret[i] = '\0';
+	resize(&ret, i);
 
 	return ret;
 }
