@@ -109,7 +109,7 @@ double travelThroughAltitude(double ** travelAltitude, int i, int j, int n) {
 
 	advanceInDirection(&newI, &newJ, min);
 
-	return travelAltitude[i][j] + travelThroughAltitude(travelAltitude, i + 1, j + 1, n);
+	return travelAltitude[i][j] + travelThroughAltitude(travelAltitude, newI, newJ, n);
 }
 
 // Retorna una estimació del temps de viatge des de BCN segons l'altitud
@@ -144,7 +144,7 @@ void mapAltitude(double ** travelAltitude, char ** map, int i, int j, int n) {
 
 	advanceInDirection(&newI, &newJ, min);
 
-	mapAltitude(travelAltitude, map, i + 1, j + 1, n);
+	mapAltitude(travelAltitude, map, newI, newJ, n);
 }
 
 
