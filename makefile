@@ -1,4 +1,4 @@
-CFLAGS = -O2 -w
+CFLAGS = -w -Wall -Wextra -g -Wundef -Wshadow -Wfloat-equal -Wunreachable-code -Os
 DLIBS = -lm
 OUT = tripo
 CC = gcc
