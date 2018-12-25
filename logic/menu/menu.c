@@ -131,7 +131,7 @@ void printDestinationList(List * l) {
 }
 
 void printAverage(double average) {
-	printf("\n\t\tAverage: %.2f\n\n", average);
+	printf("\n\t\tAverage: %.2lf\n\n", average);
 }
 
 
@@ -139,6 +139,6 @@ void printTop3(double * prices) {
 	int i = 0;
 
 	for (i = 0; i < 3; i++) {
-		printf("\t\t%d. %.2f\n", i+1, prices[i]);
+		printf("\t\t%d. %.2lf\n", i+1, prices[i]);
 	}
 }
