@@ -167,9 +167,14 @@ char ** mapAltitudeTravel(Destination dest) {
 
 // Allibera tota la memòria d'una destinació
 void freeAll(Destination dest) {
+	int i;
+
 	free(dest.name);
 	free(dest.country);
 	free(dest.hotelPrices);
+	for (i = 0; i < dest.n; i++) {
+		free(dest.travelAltitude[i]);
+	}
 	free(dest.travelAltitude);
 }
 
