@@ -8,6 +8,11 @@
 
 #define TIME_FACTOR 3.7
 
+#define BCN_LAT 41.3818
+#define BCN_LON 2.1685
+
+#define EARTH_RADIUS 6371000.0
+
 #define DIRECTIONS 4
 #define NORTH 0
 #define EAST 1
