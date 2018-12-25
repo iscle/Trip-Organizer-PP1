@@ -105,6 +105,7 @@ void removePoi(List * l, int mode) {
 			aux -> next[i] -> prev[i] = aux -> prev[i];
 		}
 		l -> n--;
+		free(aux);
 	}
 }
 
